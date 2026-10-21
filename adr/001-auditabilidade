@@ -10,8 +10,8 @@ O Veredict é uma plataforma destinada à coleta, autenticação e preservação
 
 ## Decisão
 
-Por conta disso, foi decidido isolar os registros de auditoria dos logs comuns, registrando as movimentações e atualizações que forem feitas no sistema.
+Por conta disso, foi decidido isolar os registros de auditoria dos logs comuns da aplicação. Toda ação importante no sistema (como login, criação de prova, cálculo de hash e download de arquivos) será salva de forma automática com o identificador de quem fez, data e hora certas, endereço IP e sem permitir que ninguém edite ou apague esses registros
 
 ## Consequências
 
-Como consequências ...
+Como consequência positiva, garantimos a validade jurídica das provas e a segurança de que o histórico não foi alterado, facilitando perícias e auditorias. Como ponto negativo, o sistema terá um consumo maior de espaço em disco ao longo do tempo por guardar tantos detalhes, além de exigir um cuidado a mais no código para registrar cada ação sem deixar o site lento para o usuário.
